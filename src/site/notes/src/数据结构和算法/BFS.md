@@ -23,12 +23,8 @@ BFS（*Breadth first search*）即广度优先遍历，通常配合**队列**来
 
 ## 例题
 
-```dataview
-TABLE
-	number as "Number",
-	url as "URL"
-FROM "数据结构和算法/questions"
-WHERE contains(tags, "BFS")
-SORT number
-```
+| File | Number | URL |
+| ---- | ------ | --- |
+
+{ .block-language-dataview}
 

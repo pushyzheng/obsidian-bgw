@@ -44,12 +44,8 @@ void dfs(int[][] grid, int r, int c) {
 
 ## 例题
 
-```dataview
-TABLE
-	number as "Number",
-	url as "URL"
-FROM "数据结构和算法/questions"
-WHERE contains(tags, "DFS")
-SORT number
-```
+| File | Number | URL |
+| ---- | ------ | --- |
+
+{ .block-language-dataview}
 

@@ -48,11 +48,7 @@ static void traverseDesc(TreeNode root) {
 
 ## 例题
 
-```dataview
-TABLE
-	number as "Number",
-	url as "URL"
-FROM "数据结构和算法/questions"
-WHERE contains(tags, "二叉搜索树")
-SORT number
-```
+| File | Number | URL |
+| ---- | ------ | --- |
+
+{ .block-language-dataview}
