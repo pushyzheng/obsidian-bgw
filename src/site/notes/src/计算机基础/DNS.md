@@ -16,4 +16,4 @@ DNS 既使用了 UDP，也使用了 TCP：
 
 DNS 查询的方式使用了递归 + 迭代的方式：
 
-![[Pasted image 20220906095803.png\|700]]
+![Pasted image 20220906095803.png|700](/img/user/attachments/images/Pasted%20image%2020220906095803.png)

@@ -76,7 +76,7 @@
 - 非对称加密：客户端（浏览器）生成密钥的过程
 - 对称加密：内容传输的过程
 
-![[计算机网络-HTTPS 2.png\|计算机网络-HTTPS 2.png]]
+![计算机网络-HTTPS 2.png](/img/user/attachments/images/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-HTTPS%202.png)
 
 ## 使用 HTTP 长连接有哪些优点?
 

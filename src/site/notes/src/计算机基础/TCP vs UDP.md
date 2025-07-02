@@ -16,5 +16,5 @@
 	- 效率高
 	- 实时性更好（但容忍丢包）
 
-![](dbcac3e5-232f-44fe-b76e-de6e1602177f.png)
+![](/img/user/attachments/images/dbcac3e5-232f-44fe-b76e-de6e1602177f.png)
 

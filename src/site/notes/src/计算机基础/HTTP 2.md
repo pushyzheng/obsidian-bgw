@@ -29,8 +29,8 @@
 	
 HTTP 1.1 长连接和 HTTP 2 的多路复用区别：
 
-![[640.png\|500]]
+![640.png|500](/img/user/attachments/images/640.png)
 
 HPACK 编码：
 
-![[Pasted image 20220305193543.png\|500]]
+![Pasted image 20220305193543.png|500](/img/user/attachments/images/Pasted%20image%2020220305193543.png)
