@@ -46,6 +46,18 @@
 		- 开始进行缓慢的增长（小于 2.0）
 		- 并随着切片容量的变大，增长**比例降低**，逐渐向着 **1.25** 进行靠拢
 
+## nil slice 和 empty slice 的区别？
+
+```go
+// nil slice
+var ns []int
+// empty slice
+es := make([]int, 0)
+```
+
+- nil slice 地址**无实际指向**
+- 所有的 empty slice 都指向**固定地址**，为共享的 zero 数组
+
 ## new 和 make 的区别?
 
 1. make
@@ -54,3 +66,37 @@
 2. new
 	- 可分配**任意**类型的数据，如 *map、chan*
 	- 返回指向这块内存的**指针**
+
+## Context 有什么作用？
+
+1. **控制超时/取消**：可以用来管理请求的生命周期
+2. **传递值**：跨函数、跨协程传点小数据（比如 traceID）
+3. **协程管理**：多个 Goroutine 一起跑，需要一起停，就靠 Context 通知
+
+## select 关键字有什么用？
+
+select 是多路复用 channel 的监听器：
+- 同时等**多个** Channel，哪个先准备好就执行那个 Case
+- 常用于**超时的处理**：select + time.After
+- 并可以通过 default 默认分支来**防止阻塞**
+
+例如：
+
+```go
+func main() {
+	ch := make(chan string)
+	go func() {
+		// 模拟一个耗时操作
+		time.Sleep(2 * time.Second)
+		ch <- "完成任务"
+	}()
+	select {
+	case res := <-ch:
+		fmt.Println("收到：", res)
+	// time.After 内部创建了一个定时器 NewTimer
+	// 当定时其到点后，将会往方法返回的 Channel 设置值
+	case <-time.After(1 * time.Second):
+		fmt.Println("超时了，放弃等了")
+	}
+}
+```

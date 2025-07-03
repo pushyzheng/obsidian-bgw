@@ -44,8 +44,10 @@ void dfs(int[][] grid, int r, int c) {
 
 ## 例题
 
-| File | Number | URL |
-| ---- | ------ | --- |
+| File                       | Number | URL                                             |
+| -------------------------- | ------ | ----------------------------------------------- |
+| [[leetcode/单词拆分\|单词拆分]] | 139    | https://leetcode.cn/problems/word-break/        |
+| [[leetcode/岛屿数量\|岛屿数量]] | 200    | https://leetcode.cn/problems/number-of-islands/ |
 
 { .block-language-dataview}
 

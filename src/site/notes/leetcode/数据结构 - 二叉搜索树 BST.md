@@ -48,7 +48,13 @@ static void traverseDesc(TreeNode root) {
 
 ## 例题
 
-| File | Number | URL |
-| ---- | ------ | --- |
+| File                                           | Number | URL                                                                                |
+| ---------------------------------------------- | ------ | ---------------------------------------------------------------------------------- |
+| [[leetcode/二叉搜索树的操作\|二叉搜索树的操作]]             | \-     | https://leetcode-cn.com/problems/search-in-a-binary-search-tree/                   |
+| [[leetcode/把二叉搜索树转换为累加树\|把二叉搜索树转换为累加树]]     | \-     | https://leetcode.cn/problems/convert-bst-to-greater-tree/                          |
+| [[leetcode/验证二叉搜索树\|验证二叉搜索树]]               | \-     | https://leetcode-cn.com/problems/validate-binary-search-tree/                      |
+| [[leetcode/不同的二叉搜索树\|不同的二叉搜索树]]             | 96     | https://leetcode.cn/problems/unique-binary-search-trees/                           |
+| [[leetcode/二叉搜索树中第 K 小的元素\|二叉搜索树中第 K 小的元素]] | 228    | https://leetcode.cn/problems/kth-smallest-element-in-a-bst/                        |
+| [[leetcode/前序遍历构造二叉搜索树\|前序遍历构造二叉搜索树]]       | 1008   | https://leetcode.cn/problems/construct-binary-search-tree-from-preorder-traversal/ |
 
 { .block-language-dataview}
