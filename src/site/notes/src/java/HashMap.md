@@ -16,6 +16,10 @@
 	- HashTable 的初始长度是11，每次扩容为 2n + 1
 	- HashMap 初始长度是 16，每次扩容为 2n
 
+## HashMap JDK1.7 和 JDK1.8 中的区别？
+
+
+
 ## HashMap 的实现原理？
 
 1. JDK 1.7

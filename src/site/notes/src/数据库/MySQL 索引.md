@@ -61,10 +61,13 @@
 
 ## MySQL 的慢查询优化思路？
 
-1. 排查日志，定位慢查询 SQL
-2. 用 *explain* 语句分析 SQL
-	- 特别关注 **type** 和 **extra** 字段
-3. 修改 SQL 或加索引
+1. 开启并收集**慢查询日志**，定位慢查询 SQL
+2. 用 *explain* 语句分析 SQL，特别关注两个字段
+	- type: 避免出现 **ALL**（全表扫描）
+	- extra：避免出现 Using temporary（使用临时表，**group by** 没有索引）和 Using filesort（使用文件排序，**order by** 没有索引）
+3. 优化 SQL 语句
+	- 避免复杂的子查询，用 join 来代替
+	- 合理设计索引：[[src/数据库/最左匹配原则\|最左匹配原则]]
 
 ## 大数据量级下使用 LIMIT N,M 会出现什么问题？
 

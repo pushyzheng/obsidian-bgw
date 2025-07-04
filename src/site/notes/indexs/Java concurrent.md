@@ -5,6 +5,7 @@
 
 - [[src/java/常见的垃圾收集器\|常见的垃圾收集器]]
 - [[src/java/逃逸分析\|逃逸分析]]
+- [[src/java/为什么 HashMap 的容量要是 2 的倍数？\|为什么 HashMap 的容量要是 2 的倍数？]]
 - [[src/问题排查/线上 CPU 飙高如何排查\|线上 CPU 飙高如何排查]]
 - [[src/java/AQS\|AQS]]
 - [[src/java/CMS 常见问题\|CMS 常见问题]]
