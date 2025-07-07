@@ -20,13 +20,13 @@
 ## GMP 模型
 
 G-M-P分别代表：
-- G - Goroutine
+- ==G - Goroutine==
 	- 轻量级协程，抽象为**任务**，是参与调度与执行的**最小单位**
 	- 理论上没有上限
-- M - Machine
+- ==M - Machine==
 	- **系统级**线程，真正干活的
 	- 可通过 runtime.SetMaxThreads 设置 M 的最大数量
-- P - Processor
+- ==P - Processor==
 	- 调度器的上下文：管理**任务队列**、栈信息等，最多可存放256个G
 	- 可通过 GOMAXPROCS 设置，意味着程序执行时只有多少个 goroutine 在**同时执行**
 

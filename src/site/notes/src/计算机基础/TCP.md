@@ -16,23 +16,20 @@
 
 ## 三次握手的流程？
 
-[TCP 的三次握手](obsidian://open?vault=%E7%AC%94%E8%AE%B0&file=src%2Funarchived%2FTCP%20%E7%9A%84%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B)过程：
-1. 请求连接
+1. **请求**连接
 	- 发送 SYN = 1 的连接请求报文
 	- 传递客户端随机选择的**初始序列号**（client_isn）
-2. 连接确认
+2. 连接**确认**
 	- 发送 SYN = 1 的连接确认报文
 	- 传递服务端随机选择的初始序列号（server_isn）
 	- 传递 **client_isn + 1** 的 ACK 报文
 	- 服务端开始为 TCP 连接**分配资源**（缓存和变量）
-3. 客户再次确认
+3. 客户**再次**确认
 	- 发送 SYN = 0 的报文，表示连接建立
 	- 传递 **server_isn + 1** 的 ACK 报文
 	- 客户端开始为 TCP 连接**分配资源**（缓存和变量）
 
 ## TCP 的四次挥手机制？
-
-[TCP 的四次挥手](obsidian://open?vault=%E7%AC%94%E8%AE%B0&file=src%2Funarchived%2FTCP%20%E7%9A%84%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B)的过程：
 
 1. 客户端**主动断开**连接
 	- 发送 FIN = 1 的报文
