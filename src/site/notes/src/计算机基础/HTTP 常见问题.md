@@ -110,6 +110,34 @@ QUIC 为啥快？
 - 拥塞机制的慢启动
 - 丢包导致的队头阻塞
 
+## 什么是 Chunked 机制？
+
+Chunked 机制，即**分块传输**编码（Chunked Transfer Encoding），是 **HTTP/1.1**中的传输协议，允许服务器将数据分成**多个块**（chunk）逐个发送给客户端。
+
+特点：
+1. 无需预先知道内容的长度：适合动态生成内容或流式传输
+2. 保持持久连接
+3. 支持动态头部
+
+协议示例：
+
+```shell
+HTTP/1.1 200 OK              # 状态码，无法修改
+Content-Type: text/plain
+Transfer-Encoding: chunked   # 表示消息体采用分块传输
+
+25                                    # 块大小（16进制）+ CRLF 回车
+This is the data in the first chunk   # 块数据 + CRLF
+1C
+and this is the second one
+3
+con
+8
+sequence
+0
+```
+
+
 ## 参考资料
 
 > https://mp.weixin.qq.com/s/amOya0M00LwpL5kCS96Y6w
