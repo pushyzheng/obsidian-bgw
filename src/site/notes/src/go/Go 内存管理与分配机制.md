@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"Go 内存管理与分配机制","permalink":"/Go 内存管理与分配机制/"}
+{"dg-publish":true,"dg-permalink":"Go 内存管理与分配机制","permalink":"/Go 内存管理与分配机制/","tags":["Go"]}
 ---
 
 

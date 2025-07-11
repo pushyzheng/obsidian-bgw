@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"Go 并发","permalink":"/Go 并发/"}
+{"dg-publish":true,"dg-permalink":"Go 并发","permalink":"/Go 并发/","tags":["Go"]}
 ---
 
 

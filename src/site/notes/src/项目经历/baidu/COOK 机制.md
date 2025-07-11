@@ -5,7 +5,7 @@
 
 ## 背景
 
-展现架构迁移到 Nginx 后，为减少首屏浏览器的渲染时间，采用[[src/计算机基础/HTTP 常见问题#什么是 Chunked 机制？\|Chunked 机制]]分块传输搜索页面（header + body）。
+展现架构迁移到 Nginx 后，为**减少首屏**浏览器的**渲染**时间，采用[[src/计算机基础/HTTP 常见问题#什么是 Chunked 机制？\|Chunked 机制]]分块传输搜索页面（header + body）。
 
 定义：
 - COOK 包：vui -> nginx

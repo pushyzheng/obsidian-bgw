@@ -1,8 +1,9 @@
 ---
-{"dg-publish":true,"dg-permalink":"PHP vs Go","permalink":"/PHP vs Go/"}
+{"dg-publish":true,"dg-permalink":"PHP vs Go","permalink":"/PHP vs Go/","tags":["Go","PHP"]}
 ---
 
 
+#Go #PHP
 
 | 方面     | PHP                                | Go                           |
 |:-------- |:---------------------------------- |:---------------------------- |

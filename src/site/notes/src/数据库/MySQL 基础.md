@@ -66,13 +66,10 @@
 
 ## MySQL 都有哪些日志？
 
-1. binlog（二进制日志）	
-	- 记录执行修改的所有操作，三种模式：
-		- ROW
-		- STATMENT
-		- MIXED
+1. [[src/数据库/binlog\|binlog（二进制日志）	]]
+	- 记录执行修改的所有操作，三种模式：ROW/STATMENT/MIXED
 	- 作用：**恢复数据库和主从同步**
-2. redo log（重做日志）
+2. redolog（重做日志）
 	- InnoDB 特有，记录事务日志
 	- 两阶段提交：写 binlog 成功后才会 commit
 	- 作用：用于**数据恢复**，保证数据的完整性
@@ -82,15 +79,11 @@
 
 ## binlog 和 redolog 有什么区别？
 
-1. **日志类型**
-	- redolog：物理日志
-	- binglog：逻辑日志
-2.  **提供方**
-	- redolog：InnoDB
-	- binglog：MySQL
-3. **写入方式**
-	- redolog：循环写入
-	- binglog：追加写入
+| 项目 | redolog | binlog |
+|------|---------|--------|
+| **日志类型** | 物理日志 | 逻辑日志 |
+| **提供方** | InnoDB | MySQL |
+| **写入方式** | 循环写入 | 追加写入 |
 
 ## 主键使用自增 ID 和 UUID 的区别？
 

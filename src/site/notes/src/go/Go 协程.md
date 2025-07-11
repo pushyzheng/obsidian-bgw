@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"Go 协程","permalink":"/Go 协程/"}
+{"dg-publish":true,"dg-permalink":"Go 协程","permalink":"/Go 协程/","tags":["Go"]}
 ---
 
 
