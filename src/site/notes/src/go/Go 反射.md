@@ -20,3 +20,9 @@
 | 读取字段 Tag     | `reflect.Type.Field(i).Tag.Get("tagName")`                                               |
 | 修改字段值       | `reflect.Value.Field(i).SetXXX()`（前提：字段可设置且变量是指针）                           |
 | 调用方法         | `v.MethodByName("MethodName").Call(args)`                                                |
+
+## reflect.DeepEqual 和 == 有什么区别？
+
+
+- == 运算符：只能比较基本类型，但 map、slice、func 不支持
+- reflect.DeepEqual: 可以比较任意两个值，能够递归地进行深度比较；例如 Map：比较所有的键值对
