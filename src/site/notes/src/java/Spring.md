@@ -8,14 +8,14 @@
 ## 谈谈 Spring IoC 的理解，原理与实现？
 
 IoC （*Inversion of Control*）即依赖反转，是一种设计的**思想**。即：
-- 用来依赖对象之间的解耦；
-- 依赖的对象不应该由自己来创建（控制权），而是**交给「第三方」组件**。
+- 用来依赖对象之间的**解耦**
+- 依赖的对象不应该由自己来创建（控制权），而是交给**第三方**组件
 
 而 DI（*Dependency injection*）即依赖注入，是 IoC 的**具体实现**，如 Spring。即：
-- 不必由自己创建对象，**只需要描述如何创建，以及定义好依赖**；
-- 第三方框架（Spring）会自动注入；
+- 不必由自己创建对象，只需要描述如何创建，以及**定义好依赖**
+- 第三方框架（如Spring）会自动注入
 
-而[依赖倒置原则](obsidian://open?vault=%E7%AC%94%E8%AE%B0&file=src%2Funarchived%2F%E4%BE%9D%E8%B5%96%E5%80%92%E7%BD%AE%E5%8E%9F%E5%88%99)则是面向接口编程中的一个原则，让高层（核心业务）屏蔽了底层的（技术细节）依赖。
+而[[src/软件设计/依赖倒置原则\|依赖倒置原则]]是面向接口编程中的一个原则，让高层（核心业务）屏蔽了底层的（技术细节）依赖。
 
 ## 谈一下spring IOc的底层实现
 
@@ -86,8 +86,6 @@ Aspect（切面），是由切点和通知组成：
 	- *cglib*：
 		- 基于 **ASM** 实现：通过字节码增强生成代理类（被代理类的子类），来调用被代理类（父类）
 		- 性能高于 JDK proxy
-
-[代码实现](https://jihulab.com/learning/interview/-/tree/main/src/main/java/org/example/interview/builtin/proxy)
 
 原理见：[Java 反射](obsidian://open?vault=%E7%AC%94%E8%AE%B0&file=src%2Funarchived%2FJava%20%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86)
 

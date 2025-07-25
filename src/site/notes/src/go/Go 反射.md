@@ -11,15 +11,25 @@
 
 ## 常用反射操作有哪些？
 
-| 功能             | 用法                                                                                     |
-|------------------|------------------------------------------------------------------------------------------|
-| 获取类型         | `reflect.TypeOf(x)`                                                                      |
-| 获取值           | `reflect.ValueOf(x)`                                                                     |
-| 判断类型种类     | `v.Kind()`                                                                               |
-| 访问结构体字段   | `val.Field(i)` 、`val.FieldByName("FieldName")`                                           |
-| 读取字段 Tag     | `reflect.Type.Field(i).Tag.Get("tagName")`                                               |
-| 修改字段值       | `reflect.Value.Field(i).SetXXX()`（前提：字段可设置且变量是指针）                           |
-| 调用方法         | `v.MethodByName("MethodName").Call(args)`                                                |
+| 功能               | 用法                                                              |
+| ------------------ | ----------------------------------------------------------------- |
+| 获取类型           | `reflect.TypeOf(x)`                                               |
+| 获取值             | `reflect.ValueOf(x)`                                              |
+| 获取指针的真实类型 | `v.Type().Elem()`                                                                  |
+| 判断类型种类       | `v.Kind()`                                                        |
+| 访问结构体字段     | `val.Field(i)` 、`val.FieldByName("FieldName")`                   |
+| 读取字段 Tag       | `reflect.Type.Field(i).Tag.Get("tagName")`                        |
+| 修改字段值         | `reflect.Value.Field(i).SetXXX()`（前提：字段可设置且变量是指针） |
+| 调用方法           | `v.MethodByName("MethodName").Call(args)`                         |
+
+## Go 反射中的 TypeOf 和 ValueOf 的区别?
+
+- ==reflect.TypeOf==
+	- 返回的是变量的**动态类型**信息，不包含变量的具体值
+	- 效率稍高
+- ==reflect.ValueOf==
+	- 返回的是变量的**具体值**的封装，不仅包含变量的类型，还能**访问和操作**变量的实际数据
+	- 可以通过它进一步操作值（例如获取字段、调用方法等）
 
 ## reflect.DeepEqual 和 == 有什么区别？
 

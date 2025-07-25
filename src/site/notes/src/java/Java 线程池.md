@@ -18,7 +18,7 @@
 2. maximumPoolSize：**最大**线程数
 3. keepAliveTime：非核心线程的存活时间
 4. unit：keepAliveTime 的时间**单位**
-5. workQueue：[[src/java/JUC#BlockingQueue 的实现原理？\|阻塞队列]]接口具体实现的对象
+5. workQueue：[[src/java/Java 并发集合类#BlockingQueue 的实现原理？\|阻塞队列]]接口具体实现的对象
 	- 内部线程池，用于任务提交和执行的解耦
 	- 当核心线程满时，用于任务的缓冲
 6. threadFactory：创建线程工厂
@@ -70,7 +70,7 @@
 ## 如何简单手写一个线程池？
 
 关键：
-1. [[src/java/JUC#BlockingQueue 的实现原理？\|阻塞队列]]
+1. [[src/java/Java 并发集合类#BlockingQueue 的实现原理？\|阻塞队列]]
 2. 线程集合
 3. 线程循环从阻塞队列中取出任务
 4. 暴露提交执行任务的 API：将任务 *Runnable* 对象放入到阻塞队列中

@@ -10,7 +10,7 @@
 底层设计是**生产者消费者模型**：
 
 1. Entry API 入口：提交任务并入队
-2. workQueue（[[src/java/JUC#BlockingQueue 的实现原理？\|阻塞队列]]）
+2. workQueue（[[src/java/Java 并发集合类#BlockingQueue 的实现原理？\|阻塞队列]]）
 	- 缓冲：核心线程占满时，任务将入队
 	- 解耦：队列
 	- 不同的调度策略：如 *PriorityBlockingQueue* 支持**高优先级**的调度策略
