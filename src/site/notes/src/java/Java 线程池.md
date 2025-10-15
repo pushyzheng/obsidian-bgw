@@ -7,18 +7,39 @@
 
 ## 为什么会有线程池？
     
-1. 降低**资源的消耗**：不用频繁创建和销毁
-2. 提高**响应速度**：任务到达时不用等待创建
-3. 提升线程的**可管理性**：统一分配、统一管理、统一监控
-4. 提供更多**更强大的功能**：如 *ScheduledExecutorService*
-	
+1. ==降低资源的消耗==
+	- 不用频繁创建和销毁
+2. ==提高响应速度==
+	- 任务到达时不用等待创建
+3. ==提升线程的可管理性==
+	- 统一分配、统一管理、统一监控
+4. ==提供更多更强大的功能==
+	- 如 *ScheduledExecutorService*
+
+## 线程池都有哪几种状态？
+
+1. ==RUNNING==
+	- **能接受**新任务
+	- 并处理阻塞队列中的任务
+2. ==SHUTDOWN==
+	- 不接受新任务
+	- 但是可以处理阻塞队列中的任务
+3. ==STOP==
+	- **不接受**新任务
+	- 并且不处理阻塞队列中的任务，且还打断正在运行任务的线程
+4. ==TIDYING==
+	- 所有任务都终止
+	- 并且工作线程也为 0，处于**关闭之前**的状态
+5. ==TERMINATED==
+	- 已**关闭**
+
 ## 创建线程池都有哪些参数？
 
-1. corePoolSize：**核心**线程数
-2. maximumPoolSize：**最大**线程数
-3. keepAliveTime：非核心线程的存活时间
+1. ==corePoolSize==：**核心**线程数
+2. ==maximumPoolSize==：**最大**线程数
+3. ==keepAliveTime==：非核心线程的存活时间
 4. unit：keepAliveTime 的时间**单位**
-5. workQueue：[[src/java/Java 并发集合类#BlockingQueue 的实现原理？\|阻塞队列]]接口具体实现的对象
+5. ==workQueue==：[[src/java/Java 并发集合类#BlockingQueue 的实现原理？\|阻塞队列]]接口具体实现的对象
 	- 内部线程池，用于任务提交和执行的解耦
 	- 当核心线程满时，用于任务的缓冲
 6. threadFactory：创建线程工厂
@@ -26,46 +47,29 @@
 
 ## 核心线程和最大线程数的区别？
 
-1. 核心线程：线程池承载日常任务的**中坚力量**，正常预估的线程数量
-2. 最大线程：为了应付**突发状况**
+1. ==核心线程==
+	- 线程池承载日常任务的**中坚力量**，正常预估的线程数量
+2. ==最大线程==
+	- 为了应付**突发状况**
 3. 回收策略
 	- *allowCoreThreadTimeOut* 默认为 *false* 的情况下，核心线程将会永远不会被回收
-	- 而非核心线程在 *keepAliveTime* 时间内如果还**未获取到任务**，将会被销毁
-
-## 线程池都有哪几种状态？
-
-1. RUNNING
-	- 能接受新任务
-	- 并处理阻塞队列中的任务
-2. SHUTDOWN
-	- 不接受新任务
-	- 但是可以处理阻塞队列中的任务
-3. STOP
-	- 不接受新任务
-	- 并且不处理阻塞队列中的任务，且还打断正在运行任务的线程
-4. TIDYING
-	- 所有任务都终止
-	- 并且工作线程也为 0，处于关闭之前的状态
-5. TERMINATED
-	- 已关闭
+	- 而非核心线程在 keepAliveTime 时间内如果还**未获取到任务**，将会被销毁
 
 ## 线程池中都有哪些拒绝策略的？
 
-1. AbortPolicy（默认）
+1. ==AbortPolicy（默认）==
 	- 直接抛出 *RejectedExecutionException* 异常
-2. CallerRunsPolicy
+2. ==CallerRunsPolicy==
 	- 直接在当前线程执行
-3. DiscardPolicy
+3. ==DiscardPolicy==
 	- 直接忽略异常
-4. DiscardOldestPolicy
+4. ==DiscardOldestPolicy==
 	- 从队列中删除最旧的任务后，再执行
   
 ## 如何实现一个在当前线程阻塞的拒绝策略？
 
 1. 通过 `executor.getQueue()` 获取到线程池的阻塞队列
 2. 调用 `put` 方法将任务提交到队列中，如果**队列满**则会被阻塞，直到队列不为满时才会被唤醒
-
-参考：[BlockingRejectedExecution.java](https://jihulab.com/learning/interview/-/blob/main/src/main/java/org/example/interview/builtin/concurrent/threadpool/BlockingRejectedExecution.java)
   
 ## 如何简单手写一个线程池？
 
