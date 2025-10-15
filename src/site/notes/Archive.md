@@ -15,13 +15,14 @@
 | [[src/go/CSP 并发模型\|CSP 并发模型]]                                    |
 | [[src/go/Go String\|Go String]]                                  |
 | [[src/go/Go Struct\|Go Struct]]                                  |
+| [[src/go/Go 与其他语言的对比\|Go 与其他语言的对比]]                              |
 | [[src/go/Go 内存管理与分配机制\|Go 内存管理与分配机制]]                            |
 | [[src/go/Go 协程\|Go 协程]]                                          |
 | [[src/go/Go 反射\|Go 反射]]                                          |
 | [[src/go/Go 基础\|Go 基础]]                                          |
 | [[src/go/Go 并发\|Go 并发]]                                          |
 | [[src/go/Go 结构体比较示例\|Go 结构体比较示例]]                                |
-| [[src/go/PHP vs Go\|PHP vs Go]]                                  |
+| [[src/go/Go 设计理念\|Go 设计理念]]                                      |
 | [[src/go/sync.Map 实现原理\|sync.Map 实现原理]]                          |
 | [[src/go/对象池\|对象池]]                                              |
 | [[src/java/AQS\|AQS]]                                            |
@@ -55,10 +56,10 @@
 | [[src/java/SpringBoot\|SpringBoot]]                              |
 | [[src/java/Synchronized\|Synchronized]]                          |
 | [[src/java/ThreadLocal\|ThreadLocal]]                            |
-| [[src/java/类加载机制常见问题\|类加载机制常见问题]]                                |
 | [[src/java/synchronized 的升级过程\|synchronized 的升级过程]]              |
 | [[src/java/为什么 HashMap 的容量要是 2 的倍数？\|为什么 HashMap 的容量要是 2 的倍数？]]  |
 | [[src/java/常见的垃圾收集器\|常见的垃圾收集器]]                                  |
+| [[src/java/类加载机制常见问题\|类加载机制常见问题]]                                |
 | [[src/sql/查询出相同的记录\|查询出相同的记录]]                                   |
 | [[src/业务知识/去哪儿酒店\|去哪儿酒店]]                                        |
 | [[src/业务知识/小红书 - 闪光视频\|小红书 - 闪光视频]]                              |
@@ -69,9 +70,9 @@
 | [[src/业务知识/滴滴和高德\|滴滴和高德]]                                        |
 | [[src/业务知识/百度 - 搜索技术平台\|百度 - 搜索技术平台]]                            |
 | [[src/业务知识/酒店顺畅度\|酒店顺畅度]]                                        |
-| [[src/分布式/Dubbo 源码中的一些概念\|Dubbo 源码中的一些概念]]                       |
 | [[src/分布式/Dubbo\|Dubbo]]                                         |
 | [[src/分布式/Kafka\|Kafka]]                                         |
+| [[src/分布式/Dubbo 源码中的一些概念\|Dubbo 源码中的一些概念]]                       |
 | [[src/分布式/RabbitMQ\|RabbitMQ]]                                   |
 | [[src/分布式/ZooKeeper\|ZooKeeper]]                                 |
 | [[src/分布式/canal\|canal]]                                         |
@@ -118,14 +119,14 @@
 | [[src/数据结构和算法/Floyd 判圈算法\|Floyd 判圈算法]]                           |
 | [[src/数据结构和算法/LFU\|LFU]]                                         |
 | [[src/数据结构和算法/LRU\|LRU]]                                         |
-| [[src/数据结构和算法/partition\|partition]]                             |
 | [[src/数据结构和算法/TopK 问题\|TopK 问题]]                                 |
+| [[src/数据结构和算法/leetcode\|leetcode]]                               |
+| [[src/数据结构和算法/partition\|partition]]                             |
+| [[src/数据结构和算法/二分查找\|二分查找]]                                       |
 | [[src/数据结构和算法/二分查找相关题\|二分查找相关题]]                                 |
 | [[src/数据结构和算法/二叉树 - 常见问题\|二叉树 - 常见问题]]                           |
-| [[src/数据结构和算法/leetcode\|leetcode]]                               |
 | [[src/数据结构和算法/二叉树\|二叉树]]                                         |
 | [[src/数据结构和算法/二叉树层序遍历\|二叉树层序遍历]]                                 |
-| [[src/数据结构和算法/二分查找\|二分查找]]                                       |
 | [[src/数据结构和算法/从遍历中构造树\|从遍历中构造树]]                                 |
 | [[src/数据结构和算法/位运算\|位运算]]                                         |
 | [[src/数据结构和算法/全排列问题\|全排列问题]]                                     |
@@ -174,6 +175,7 @@
 | [[src/计算机基础/竞争条件\|竞争条件]]                                         |
 | [[src/计算机基础/计算机网络基础\|计算机网络基础]]                                   |
 | [[src/计算机基础/进程与线程\|进程与线程]]                                       |
+| [[src/计算机基础/网络层协议\|网络层协议]]                                       |
 | [[src/软件设计/IM 系统设计\|IM 系统设计]]                                    |
 | [[src/软件设计/依赖倒置原则\|依赖倒置原则]]                                      |
 | [[src/软件设计/单一职责原则\|单一职责原则]]                                      |
@@ -239,15 +241,15 @@
 | [[src/面试记录/2022归档/2022.9 字节面试评价\|2022.9 字节面试评价]]                 |
 | [[src/面试记录/2022归档/HR 面\|HR 面]]                                   |
 | [[src/面试记录/2022归档/数据统计\|数据统计]]                                   |
-| [[src/项目经历/baidu/COOK 机制\|COOK 机制]]                              |
 | [[src/项目经历/baidu/CS-Mixed 混合协议\|CS-Mixed 混合协议]]                  |
+| [[src/项目经历/baidu/COOK 机制\|COOK 机制]]                              |
 | [[src/项目经历/baidu/ExGraph 自动注入实现\|ExGraph 自动注入实现]]                |
-| [[src/项目经历/baidu/ExGraph\|ExGraph]]                              |
 | [[src/项目经历/baidu/Instant Search\|Instant Search]]                |
+| [[src/项目经历/baidu/ExGraph\|ExGraph]]                              |
 | [[src/项目经历/baidu/NB-UI 平台工具\|NB-UI 平台工具]]                        |
 | [[src/项目经历/baidu/VUI\|VUI]]                                      |
-| [[src/项目经历/baidu/hermes 的设计背景\|hermes 的设计背景]]                    |
 | [[src/项目经历/baidu/大搜模块划分图\|大搜模块划分图]]                              |
+| [[src/项目经历/baidu/hermes 的设计背景\|hermes 的设计背景]]                    |
 | [[src/项目经历/baidu/广告下移&屏蔽通路实现细节\|广告下移&屏蔽通路实现细节]]                  |
 | [[src/项目经历/baidu/广告下移&屏蔽通路重构\|广告下移&屏蔽通路重构]]                      |
 | [[src/项目经历/baidu/广告下移管理后台\|广告下移管理后台]]                            |
