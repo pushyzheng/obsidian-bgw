@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"CMS 常见问题","permalink":"/CMS 常见问题/"}
+{"dg-publish":true,"dg-permalink":"CMS 常见问题","permalink":"/CMS 常见问题/","tags":["JVM"]}
 ---
 
 

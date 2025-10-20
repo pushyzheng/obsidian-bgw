@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"线上 CPU 飙高如何排查","permalink":"/线上 CPU 飙高如何排查/"}
+{"dg-publish":true,"dg-permalink":"线上 CPU 飙高如何排查","permalink":"/线上 CPU 飙高如何排查/","tags":["JVM"]}
 ---
 
 

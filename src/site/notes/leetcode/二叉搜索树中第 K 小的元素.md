@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"二叉搜索树中第 K 小的元素","permalink":"/二叉搜索树中第 K 小的元素/","title":"二叉搜索树中第 K 小的元素","tags":["树","二叉树","二叉搜索树"]}
+{"dg-publish":true,"dg-permalink":"二叉搜索树中第 K 小的元素","permalink":"/二叉搜索树中第 K 小的元素/","tags":["树","二叉树","二叉搜索树"]}
 ---
 
 

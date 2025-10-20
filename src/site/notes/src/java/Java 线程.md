@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"Java 线程","permalink":"/Java 线程/"}
+{"dg-publish":true,"dg-permalink":"Java 线程","permalink":"/Java 线程/","tags":["JUC"]}
 ---
 
 

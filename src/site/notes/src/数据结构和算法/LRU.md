@@ -11,7 +11,7 @@ LRU （*Least Recently Used*），即最近最少使用的算法。
 
 是一种常用的页面置换算法，当元素到达最大缓存容量时，将会选择**最近最久未使用**的页面予以淘汰。
 
-## 实现
+## 思路
 
 ### 哈希表 + 双向链表
 
@@ -39,13 +39,14 @@ LRU （*Least Recently Used*），即最近最少使用的算法。
 
 在双向链表实现中，这里使用一个**伪头部**和**伪尾部**标记界限，这样在更新的时候就不需要检查是否是 null 节点。
 
-参考代码：[HashMapAndLinkedList.java](https://jihulab.com/learning/interview/-/blob/main/src/main/java/org/example/interview/algorithm/lru/impl/HashMapAndLinkedList.java)
-
 ### 基于 JDK 的 LinkedHashMap
 
 参考代码：[ImplementationByLinkedHashMap.java](https://jihulab.com/learning/interview/-/blob/main/src/main/java/org/example/interview/algorithm/lru/ImplementationByLinkedHashMap.java)
 
+## 代码
 
-## 例题
+### Go
+
+[[leetcode/LRU 缓存\|LRU 缓存]]
 
 https://leetcode-cn.com/problems/lru-cache/solution/

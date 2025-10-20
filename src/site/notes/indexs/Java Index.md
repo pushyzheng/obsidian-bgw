@@ -18,11 +18,18 @@
 	- [[src/java/Java 面向对象#面向对象的三大特性?\|面向对象的三大特性]]
 	- [[src/java/Java 面向对象#谈谈你对多态的理解？\|对多态的理解]]
 	- [[src/java/Java 面向对象#抽象类和普通类区别?\|抽象类和普通类区别]]
-- [[src/java/Java 基础#谈谈你对泛型的理解？\|对泛型的理解]]
-- [[src/java/Java 基础#什么是反射？\|什么是反射]]
+	- [[src/java/Java 基础#谈谈你对泛型的理解？\|对泛型的理解]]
+- 类
+	- [[src/java/Java 基础#hashcode 和 equals 方法有什么关系？\|hashcode 和 equals 方法有什么关系]]
+	- [[src/java/Java 基础#加载顺序\|类的加载顺序]]
+	- [[src/java/Java 基础#内部类\|内部类]]
+	- [[src/java/Java 基础#说一下 serialVersionUID 的理解？\|serialVersionUID]]
+	- [[src/java/Java 基础#深拷贝和浅拷贝的区别？\|深拷贝和浅拷贝的区别]]
+	- [[src/java/Java 基础#实现深拷贝的三种方法是什么？\|实现深拷贝的三种方法是什么]]
+- 反射
+	- [[src/java/Java 基础#什么是反射？\|什么是反射]]
+	- [[src/java/Java 基础#反射的原理是什么？\|反射的原理是什么]]
 - [[src/java/Java 基础#能讲一讲Java注解的原理吗?\|注解的原理]]
-- [[src/java/Java 基础#深拷贝和浅拷贝的区别？\|深拷贝和浅拷贝的区别]]
-	- [[src/java/Java 基础#实现深拷贝的三种方法是什么？\|实现深拷贝的三种方法]]
 - [[src/java/Java Exception\|异常]]
 	- [[src/java/Java Exception#介绍一下Java异常\|介绍一下Java异常、Java 异常的分类]]
 	- [[src/java/Java Exception#ClassNotFoundException 和 NoClassDefFoundError 的区别\|ClassNotFoundException 和 NoClassDefFoundError 的区别]]
@@ -33,6 +40,7 @@
 ## 集合
 
 - [[src/java/Java 集合#集合中的快速失败(fail-fast)机制？\|快速失败(fail-fast)机制]]
+- [[src/java/Java 集合#集合中增强 for 内部原理 iterator 反编译介绍 ？\|增强 for 内部原理]]
 - List
 	- [[src/java/Java 集合#ArrayList 和 LinkedList 的应用场景\|ArrayList 和 LinkedList 的应用场景]]
 	- [[src/java/Java 集合#ArrayList 集合扩容原理？\|ArrayList 集合扩容原理]]

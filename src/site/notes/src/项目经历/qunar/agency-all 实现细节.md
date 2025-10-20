@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"agency-all 实现细节","permalink":"/agency-all 实现细节/"}
+{"dg-publish":true,"dg-permalink":"agency-all 实现细节","permalink":"/agency-all 实现细节/","tags":["项目"]}
 ---
 
 

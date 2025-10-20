@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"ExGraph","permalink":"/ExGraph/"}
+{"dg-publish":true,"dg-permalink":"ExGraph","permalink":"/ExGraph/","tags":["项目"]}
 ---
 
 

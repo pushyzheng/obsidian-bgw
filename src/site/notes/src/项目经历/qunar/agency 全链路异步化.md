@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"agency 全链路异步化","permalink":"/agency 全链路异步化/"}
+{"dg-publish":true,"dg-permalink":"agency 全链路异步化","permalink":"/agency 全链路异步化/","tags":["项目"]}
 ---
 
 

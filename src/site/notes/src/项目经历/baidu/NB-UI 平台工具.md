@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"NB-UI 平台工具","permalink":"/NB-UI 平台工具/"}
+{"dg-publish":true,"dg-permalink":"NB-UI 平台工具","permalink":"/NB-UI 平台工具/","tags":["项目"]}
 ---
 
 

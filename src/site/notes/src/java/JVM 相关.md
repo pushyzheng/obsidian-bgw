@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"JVM 相关","permalink":"/JVM 相关/"}
+{"dg-publish":true,"dg-permalink":"JVM 相关","permalink":"/JVM 相关/","tags":["JVM"]}
 ---
 
 

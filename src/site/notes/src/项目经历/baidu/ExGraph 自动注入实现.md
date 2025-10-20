@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"ExGraph 自动注入实现","permalink":"/ExGraph 自动注入实现/"}
+{"dg-publish":true,"dg-permalink":"ExGraph 自动注入实现","permalink":"/ExGraph 自动注入实现/","tags":["项目"]}
 ---
 
 

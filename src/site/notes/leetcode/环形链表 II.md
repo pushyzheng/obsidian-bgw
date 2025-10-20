@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"环形链表 II","permalink":"/环形链表 II/","title":"环形链表 II","tags":["链表"]}
+{"dg-publish":true,"dg-permalink":"环形链表 II","permalink":"/环形链表 II/","title":"环形链表 II","tags":["链表","Floyd"]}
 ---
 
 

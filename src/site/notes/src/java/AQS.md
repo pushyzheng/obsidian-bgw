@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"AQS","permalink":"/AQS/"}
+{"dg-publish":true,"dg-permalink":"AQS","permalink":"/AQS/","tags":["JUC"]}
 ---
 
 

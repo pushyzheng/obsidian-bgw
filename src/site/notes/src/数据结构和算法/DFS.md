@@ -44,10 +44,16 @@ void dfs(int[][] grid, int r, int c) {
 
 ## 例题
 
-| File                       | Number | URL                                             |
-| -------------------------- | ------ | ----------------------------------------------- |
-| [[leetcode/单词拆分\|单词拆分]] | 139    | https://leetcode.cn/problems/word-break/        |
-| [[leetcode/岛屿数量\|岛屿数量]] | 200    | https://leetcode.cn/problems/number-of-islands/ |
+| File                               | Number | URL                                                                      |
+| ---------------------------------- | ------ | ------------------------------------------------------------------------ |
+| [[leetcode/子结构判断\|子结构判断]]       | \-     | https://leetcode-cn.com/submissions/detail/291811377/                    |
+| [[leetcode/二叉树的中序遍历\|二叉树的中序遍历]] | 94     | https://leetcode.cn/problems/binary-tree-inorder-traversal/description/  |
+| [[leetcode/路径总和\|路径总和]]         | 112    | https://leetcode-cn.com/problems/path-sum/                               |
+| [[leetcode/单词拆分\|单词拆分]]         | 139    | https://leetcode.cn/problems/word-break/                                 |
+| [[leetcode/二叉树的前序遍历\|二叉树的前序遍历]] | 144    | https://leetcode.cn/problems/binary-tree-preorder-traversal/description/ |
+| [[leetcode/二叉树的后序遍历\|二叉树的后序遍历]] | 145    | https://leetcode.cn/problems/binary-tree-postorder-traversal/            |
+| [[leetcode/岛屿数量\|岛屿数量]]         | 200    | https://leetcode.cn/problems/number-of-islands/                          |
+| [[leetcode/二叉树的直径\|二叉树的直径]]     | 543    | https://leetcode.cn/problems/diameter-of-binary-tree/                    |
 
 { .block-language-dataview}
 

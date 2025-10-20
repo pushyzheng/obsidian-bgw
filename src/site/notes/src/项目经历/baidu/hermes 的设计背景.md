@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"hermes 的设计背景","permalink":"/hermes 的设计背景/"}
+{"dg-publish":true,"dg-permalink":"hermes 的设计背景","permalink":"/hermes 的设计背景/","tags":["项目","搜索架构"]}
 ---
 
 

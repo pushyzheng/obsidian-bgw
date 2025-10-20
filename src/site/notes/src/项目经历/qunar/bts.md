@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"bts","permalink":"/bts/"}
+{"dg-publish":true,"dg-permalink":"bts","permalink":"/bts/","tags":["项目"]}
 ---
 
 

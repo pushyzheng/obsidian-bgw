@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"Java 并发相关","permalink":"/Java 并发相关/"}
+{"dg-publish":true,"dg-permalink":"Java 并发相关","permalink":"/Java 并发相关/","tags":["JUC"]}
 ---
 
 

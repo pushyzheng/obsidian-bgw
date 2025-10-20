@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"COOK 机制","permalink":"/COOK 机制/"}
+{"dg-publish":true,"dg-permalink":"COOK 机制","permalink":"/COOK 机制/","tags":["项目"]}
 ---
 
 

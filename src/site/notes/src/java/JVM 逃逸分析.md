@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"jvm 逃逸分析","permalink":"/jvm 逃逸分析/"}
+{"dg-publish":true,"dg-permalink":"jvm 逃逸分析","permalink":"/jvm 逃逸分析/","tags":["JVM"]}
 ---
 
 

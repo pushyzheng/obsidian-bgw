@@ -12,3 +12,8 @@ BGW（Building Gods Way）
 	- [[indexs/Go Index\|Golang]]
 4. [[indexs/数据库\|数据库]]
 5. [[indexs/分布式\|分布式]]
+6. 算法
+	- [[【Database】LeetCode.base|LeetCode Database]] | [[src/数据结构和算法/leetcode\|leetcode]]
+	- [[leetcode/常见算法题\|常见算法题]]
+7. [[indexs/系统设计 System Design Index\|系统设计]]
+8. [[indexs/项目 Project Index\|项目经历]]

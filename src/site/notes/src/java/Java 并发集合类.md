@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"Java 并发集合类","permalink":"/Java 并发集合类/"}
+{"dg-publish":true,"dg-permalink":"Java 并发集合类","permalink":"/Java 并发集合类/","tags":["JUC"]}
 ---
 
 
@@ -12,18 +12,18 @@
 | 功能     | 1.7           | 1.8                      |
 | -------- | ------------- | ------------------------ |
 | 数据结构 | 数组 + 链表   | 数组 + 链表 + **红黑树** |
-| 并发实现 | 分段锁        | [CAS](obsidian://open?vault=%E7%AC%94%E8%AE%B0&file=src%2Funarchived%2FCAS) + 同步代码块         |
+| 并发实现 | 分段锁        | CAS + 同步代码块         |
 | 锁的粒度 | **段**（*Segment*） | 哈希槽的**头结点**（*Node*）                         |
 
-1. [JDK 1.7](obsidian://open?vault=%E7%AC%94%E8%AE%B0&file=src%2Funarchived%2FConcurentHashMap%20-%20JDK7)
+1. ==JDK 1.7==
 	- **锁细粒度化**：使用分段锁，来提高效率；
 	-  **Unsafe 类**操作：极致的性能优化；
 	- **保证可见性**：Entry 的 value 被 volatile 修饰。
-2. [JDK 1.8](obsidian://open?vault=%E7%AC%94%E8%AE%B0&file=src%2Funarchived%2FConcurentHashMap%20-%20JDK8)
+2. ==JDK 1.8==
 	- 引入了**懒加载**模式
-	- **进行了树化**：和 HashMap 一样，在链表长度大于 8 后变成红黑树；
-	- **降低了锁的粒度**：对**头结点**使用 *synchronized* 加锁，这样随着元素的增多，并发度也不会降低。
-	- **使用 CAS 操作**：来完成设置哈希槽结点等操作，提高了效率。
+	- 进行了**树化**：和 HashMap 一样，在链表长度大于 8 后变成红黑树；
+	- 降低了**锁的粒度**：对**头结点**使用 *synchronized* 加锁，这样随着元素的增多，并发度也不会降低。
+	- 使用 **CAS** 操作：来完成设置哈希槽结点等操作，提高了效率。
 
 ## ConcurrentHashMap 1.8 中为什么放弃分段锁？
 

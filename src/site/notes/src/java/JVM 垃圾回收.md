@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"JVM 垃圾回收","permalink":"/JVM 垃圾回收/"}
+{"dg-publish":true,"dg-permalink":"JVM 垃圾回收","permalink":"/JVM 垃圾回收/","tags":["JVM"]}
 ---
 
 

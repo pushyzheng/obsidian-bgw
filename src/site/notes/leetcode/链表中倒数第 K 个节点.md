@@ -11,6 +11,23 @@
 
 代码参考：
 
+```go
+func trainingPlan(head *ListNode, cnt int) *ListNode {
+	if head == nil {
+		return nil
+	}
+	fast, slow := head, head
+	for i := 0; i < cnt; i++ {
+		fast = fast.Next
+	}
+	for fast != nil {
+		slow = slow.Next
+		fast = fast.Next
+	}
+	return slow
+}
+```
+
 ```java
 public ListNode getKthFromEnd(ListNode head, int k) {
 	if (head==null) {
